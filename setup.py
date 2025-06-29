@@ -4,7 +4,7 @@ setup(
     name="smart_research_assistant",
     version="0.1.0",
     packages=find_packages(),
-    install_requires = [
+    install_requires=[
         "langchain>=0.1.0",
         "langchain-openai>=0.0.5",
         "langchain-community>=0.0.10",
@@ -15,18 +15,16 @@ setup(
         "beautifulsoup4>4.12.2",
         "lxml>4.9.3",
         "python-dotenv>1.0.0",
-        "pydantc>=2.5.2",
+        "pydantic>=2.5.2",
         "typing-extensions>=4.8.0",
         "tqdm>=4.66.1",
     ],
     entry_point={
-        "console_scripts":[
-            "research-assistant=smart_research_assistant.main:main"
-        ],
+        "console_scripts": ["research-assistant=smart_research_assistant.main:main"],
     },
     author="vedant khapekar",
     author_email="vedantkhapekar16@gmail.com",
     description="AI research Agent using Langchain, and Langgraph.",
     keywords="ai, research, agents",
-    python_requires=">=3.9"
+    python_requires=">=3.9",
 )
